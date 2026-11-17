@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frag Nora Upload</title>
+<style>
+:root{--bg:#F4EDE1;--ink:#1E1A17;--petrol:#0F6B73;--card:#fff;--muted:#3D5566}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181f;--ink:#F4EDE1;--card:#1f2630;--muted:#a9b6c2;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14181f;--ink:#F4EDE1;--card:#1f2630;--muted:#a9b6c2;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:760px;margin:0 auto;padding-block:32px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{display:flex;align-items:center;gap:14px}
+.logo{width:56px;height:56px;border-radius:14px;background:var(--petrol);color:#fff;display:grid;place-items:center;font-weight:800;font-size:26px}
+h1{margin:0;font-size:30px} h2{margin-top:36px;font-size:21px;color:var(--petrol)}
+nav{margin:18px 0 6px;display:flex;gap:16px;flex-wrap:wrap} nav a{color:var(--petrol);font-weight:700}
+.card{background:var(--card);border-radius:14px;padding:18px 20px;margin-top:14px}
+.yt{display:inline-block;background:#FF0000;color:#fff;font-weight:800;border-radius:6px;padding:2px 8px;font-size:14px}
+small{color:var(--muted)} a{color:var(--petrol)}
+</style>
+</head>
+<body>
+<main>
+<header><div class="logo">N</div><div><h1>Frag Nora Upload</h1><small>Internes Werkzeug des Kanals „Frag Nora“ (youtube.com/@fragnora)</small></div></header>
+<nav><a href="#datenschutz">Datenschutzerklärung</a><a href="#nutzungsbedingungen">Nutzungsbedingungen</a><a href="#youtube">Nutzung der YouTube API-Dienste</a><a href="#tiktok">TikTok</a></nav>
+
+<div class="card"><p><b>Was ist das?</b> „Frag Nora Upload“ ist ein privates Skript auf einem einzigen Mac. Es lädt ausschliesslich die eigenen, vom Kanalinhaber freigegebenen Erklärvideos auf die eigenen Konten von „Frag Nora“ hoch (YouTube-Kanal @fragnora, TikTok @frag.nora), plant ihre Veröffentlichung und setzt einen eigenen Kommentar darunter. Es gibt keine weiteren Nutzerinnen und Nutzer, keine Registrierung und keinen öffentlichen Zugang.</p>
+<p><span class="yt">YouTube</span> Dieses Werkzeug nutzt die <b>YouTube API-Dienste</b>.</p></div>
+
+<h2 id="youtube">Nutzung der YouTube API-Dienste</h2>
+<p>Das Werkzeug verwendet die YouTube Data API v3 (videos.insert, videos.list, commentThreads.insert) mit OAuth 2.0 für genau ein Konto: den Kanal des Betreibers. Mit der Nutzung gelten die <a href="https://www.youtube.com/t/terms">Nutzungsbedingungen von YouTube</a> und die <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>.</p>
+
+<h2 id="tiktok">Nutzung der TikTok-Schnittstellen</h2>
+<p>Für das eigene TikTok-Konto @frag.nora verwendet das Werkzeug das Login Kit (Anmeldung mit TikTok, OAuth 2.0) und die Content Posting API (Berechtigungen user.info.basic, video.publish, video.upload), um freigegebene Videos samt Beschreibung zu veröffentlichen. Es gelten die <a href="https://www.tiktok.com/legal/terms-of-service">Nutzungsbedingungen von TikTok</a> und die <a href="https://www.tiktok.com/legal/privacy-policy">Datenschutzrichtlinie von TikTok</a>.</p>
+
+<h2 id="datenschutz">Datenschutzerklärung</h2>
+<p><b>Verantwortlich:</b> der Betreiber des YouTube-Kanals „Frag Nora“ (Kontakt über die Kanalinfo auf youtube.com/@fragnora).</p>
+<p><b>Welche Daten werden verarbeitet?</b> Ausschliesslich Daten der eigenen Konten (YouTube, TikTok): die hochzuladende Videodatei, Titel, Beschreibung, Hashtags, Veröffentlichungszeitpunkt, die Video-ID, der Veröffentlichungsstatus sowie bei TikTok Benutzername und Profilinformationen des eigenen Kontos (für die Anzeige der Datenschutzeinstellungen vor dem Posten). Es werden keine Daten Dritter, keine Daten von Zuschauerinnen und Zuschauern und keine Kommentare anderer gelesen oder gespeichert.</p>
+<p><b>Zugangsdaten:</b> Die OAuth-Tokens (Google und TikTok) werden nur lokal auf dem Mac des Betreibers gespeichert (Dateirechte nur für den Besitzer), nie weitergegeben und nicht an Server Dritter übertragen.</p>
+<p><b>Weitergabe:</b> Keine. Daten gehen nur an Google/YouTube und TikTok über deren offizielle Schnittstellen.</p>
+<p><b>Speicherdauer und Widerruf:</b> Die Tokens bleiben gespeichert, bis der Betreiber sie löscht. Der Zugriff kann jederzeit widerrufen werden: bei Google unter <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, bei TikTok in der App unter Einstellungen und Datenschutz → Sicherheit → Apps und Dienste. Danach werden die lokal gespeicherten Tokens gelöscht.</p>
+<p><b>Cookies/Tracking:</b> Diese Seite und das Werkzeug verwenden keine Cookies, kein Tracking und keine Analyse.</p>
+
+<h2 id="nutzungsbedingungen">Nutzungsbedingungen</h2>
+<p>Das Werkzeug ist nicht öffentlich verfügbar und wird ausschliesslich vom Kanalbetreiber für den eigenen Kanal genutzt. Mit der Nutzung gelten die <a href="https://www.youtube.com/t/terms">Nutzungsbedingungen von YouTube</a> und die <a href="https://www.tiktok.com/legal/terms-of-service">Nutzungsbedingungen von TikTok</a>. Hochgeladen werden nur eigene, selbst produzierte Inhalte, nach ausdrücklicher Freigabe durch den Betreiber. Es findet kein automatisiertes Massen-Hochladen, kein Scraping und keine Manipulation von Aufrufen, Bewertungen oder Kommentaren statt.</p>
+<p><small>Stand: November 2026</small></p>
+</main>
+</body>
+</html>
